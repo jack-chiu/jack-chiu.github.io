@@ -11,7 +11,8 @@
 </div>
   <center><h1>Welcome! </h1>
   <p>If it's your first time here, click <a href="about.html">HERE</a> for instructions of how to use this website. </p>
-  <p> If not, use the interactive diagram below to view the exercises!</p></center>
+  <p>If not, use the interactive diagram below to get started!</p>
+  <p>After seeing all the exercises, create a custom workout plan by filling out the form.</p></center>
   <img src="body.png" width="502" height="1000" usemap="#bodymap" class="aligncenter">
   <map name="bodymap">
     <area shape="rect" coords="150,475,350,860" href="lower.html">
@@ -20,8 +21,59 @@
     425,330,380,330,
     330,270,170,270,
     120,330,75,330" href="upper.html">
-  <hr>
   </map>
   <br>
+  <hr>
+  <h4>Choose a pushup variation:</h4>
+  <select id="pu">
+    <option value="1">1 Incline Wall Pushup</option>
+    <option value="2">2 Knee Pushup</option>
+    <option value="3">3 Full Pushup</option>
+    <option value="4">4 Inverse Pushup</option>
+    <option value="5">5 Plyometric Pushup</option>
+  </select>
+  <h4>How many of these pushups can you do with <em>perfect form?</em></h4>
+  <select id="puez">
+    <option value="easy">More than 20</option>
+    <option value="medium">Around 10</option>
+    <option value="hard">Less than 5</option>
+  </select>
+  <h4>Choose a plank variation:</h4>
+  <select id="p">
+    <option value="1">1 Knee Plank</option>
+    <option value="2">2 Elbow Plank</option>
+    <option value="3">3 Marching Plank</option>
+    <option value="4">4 Tuck Plank</option>
+    <option value="5">5 LLPT Plank</option>
+  </select>
+  <h4>How many of these planks can you do with <em>perfect form?</em>(Marching and Tuck)/ How long can you hold this plank with <em>perfect form?</em> (Knee, Elbow and LLPT)</em></h4>
+  <select id="pez">
+    <option value="easy">More than 20 reps / Longer than 1 minute</option>
+    <option value="medium">Around 10 reps / Between 30-60 seconds</option>
+    <option value="hard">Less than 5 reps / Less than 30 seconds</option>
+  </select>
+  <h4>Choose a squat variation:</h4>
+  <select id="s">
+    <option value="1">1 Chair Squat</option>
+    <option value="2">2 Squat to Calf Raise</option>
+    <option value="3">3 Split Squat</option>
+    <option value="4">4 Cossack Squat</option>
+    <option value="5">5 Plyometric Tuck Squat</option>
+  </select>
+  <h4>How many of these squats can you do with <em>perfect form?</em></h4>
+  <select id="sez">
+    <option value="easy">More than 30</option>
+    <option value="medium">Around 20</option>
+    <option value="hard">Less than 10</option>
+  </select>
+  <h4>Finally, how much energy are you willing to expend in this workout?</h4>
+  <select id="circuit">
+    <option value="2">Not that much...</option>
+    <option value="3">A normal amount.</option>
+    <option value="5">A lot!</option>
+  </select>
+  <br>
+  <br>
+  <button type="button" class="button">SUBMIT</button>
 </body>
 </html>

@@ -38,9 +38,32 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 th, td {
   border: 1px solid black;
   text-align: left;
   padding: 4px;
+}
+.button {
+  background-color: pink;
+  border: 1px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.upperborder {
+  border: 5px solid #AF2020;
+}
+.coreborder {
+  border: 5px solid #A3A119;
+}
+.lowerborder {
+  border: 5px solid #191DA3;
 }
