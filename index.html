@@ -4,11 +4,15 @@
   <title>Home Page</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body class="index">
-  <h1>Welcome! </h1>
-  <p>If it's your first time here, click the ABOUT button below for a short introduction and instructions of how to use this website. </p>
+<body style="background-color: #D7D9CE">
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <center>Disclaimer: This website was not written by a qualified physician/exercise instructor. Proceed at your own risk.</center>
+</div>
+  <center><h1>Welcome! </h1>
+  <p>If it's your first time here, click the ABOUT button below for instructions of how to use this website. </p>
   <a href="about.html">ABOUT</a>
-  <p> If not, use the interactive diagram below to get started! Clicking the different parts of the body will show the right exercise.</p>
+  <p> If not, use the interactive diagram below to view the exercises!</p></center>
   <img src="body.png" width="502" height="1000" usemap="#bodymap" class="aligncenter">
   <map name="bodymap">
     <area shape="rect" coords="150,475,350,860" href="lower.html">
@@ -17,6 +21,7 @@
     425,330,380,330,
     330,270,170,270,
     120,330,75,330" href="upper.html">
+  <hr>
   </map>
   <br>
 </body>
