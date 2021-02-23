@@ -22,3 +22,25 @@
 .closebtn:hover {
   color: black;
 }
+.upperWord {
+  color: #880044;
+  font-weight: bolder;
+}
+.coreWord {
+  color: #666600;
+  font-weight: bolder;
+}
+.lowerWord{
+  color: #14213D;
+  font-weight: bolder;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 4px;
+}
