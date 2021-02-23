@@ -8,12 +8,16 @@
   <h1>Welcome! </h1>
   <p>If it's your first time here, click the ABOUT button below for a short introduction and instructions of how to use this website. </p>
   <a href="about.html">ABOUT</a>
-  <p> If not, use the interactive diagram below to get started! </p>
-  <p> (diagram to be added below) </p>
-  <a href="upper.html"><img src="top.png"></a>
+  <p> If not, use the interactive diagram below to get started! Clicking the different parts of the body will show the right exercise.</p>
+  <img src="body.png" width="502" height="1000" usemap="#bodymap">
+  <map name="bodymap">
+    <area shape="rect" coords="150,475,350,860" href="lower.html">
+    <area shape="rect" coords="170,275,330,460" href="core.html">
+    <area shape="poly" coords="130,170,370,170,
+    425,330,380,330,
+    330,270,170,270,
+    120,330,75,335" href="upper.html">
+  </map>
   <br>
-  <a href="core.html"><img src="core.png"></a>
-  <br>
-  <a href="lower.html"><img src="legs.png"></a>
 </body>
 </html>
