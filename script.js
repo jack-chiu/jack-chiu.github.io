@@ -7,16 +7,44 @@ function printWorkout()
   var s = document.getElementById("s").value;
   var sreps = document.getElementById("sreps").value;
 
-  if (pureps = "N/A")
-  {
-    var pusets = "N/A"
-    var purest = "N/A"
-  }
-  else if (pureps = "20")
-  {
+  if (pureps == "NOT SELECTED") {
+    var pusets = "NOT SELECTED"
+    var purest = "NOT SELECTED" }
+  else if (pureps == "20") {
     var pusets = "3"
-    var purest = "30 Seconds"
-  }
+    var purest = "30 Seconds" }
+  else if (pureps == "10") {
+    var pusets = "4"
+    var purest = "45 Seconds" }
+  else if (pureps == "3") {
+    var pusets = "5"
+    var purest = "60 Seconds" }
+
+  if (preps == "NOT SELECTED") {
+    var psets = "NOT SELECTED"
+    var prest = "NOT SELECTED" }
+  else if (preps == "20 (Marching,Tuck) / 90s Hold (Knee,Elbow,LLPT)") {
+    var psets = "3"
+    var prest = "30 Seconds" }
+  else if (pureps == "10") {
+    var pusets = "10 (Marching,Tuck) / 45s Hold (Knee,Elbow,LLPT)"
+    var purest = "45 Seconds" }
+  else if (pureps == "6 (Marching,Tuck) / 20s Hold (Knee,Elbow,LLPT)") {
+    var pusets = "5"
+    var purest = "60 Seconds" }
+
+  if (sreps == "NOT SELECTED") {
+    var ssets = "NOT SELECTED"
+    var srest = "NOT SELECTED" }
+  else if (sreps == "20") {
+    var ssets = "3"
+    var srest = "30 Seconds" }
+  else if (sreps == "15") {
+    var ssets = "4"
+    var srest = "45 Seconds" }
+  else if (sreps == "8") {
+    var ssets = "5"
+    var srest = "60 Seconds" }
 
   var customWorkout = document.getElementById("customWorkout");
   customWorkout.rows[1].cells[0].textContent = pu;
