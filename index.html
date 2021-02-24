@@ -3,6 +3,7 @@
 <head>
   <title>Home Page</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body style="background-color: #D7D9CE">
 <div class="alert">
@@ -12,7 +13,7 @@
   <center><h1>Welcome! </h1>
   <p>If it's your first time here, click <a href="about.html">HERE</a> for instructions of how to use this website. </p>
   <p>If not, use the interactive diagram below to get started!</p>
-  <p>After seeing all the exercises, create a custom workout plan by filling out the form.</p></center>
+  <p>After viewing all the exercises, scroll past the diagram to create a custom workout plan.</p></center>
   <img src="body.png" width="502" height="1000" usemap="#bodymap" class="aligncenter">
   <map name="bodymap">
     <area shape="rect" coords="150,475,350,860" href="lower.html">
@@ -24,56 +25,59 @@
   </map>
   <br>
   <hr>
+  <h2>Build your own workout routine! Fill out the form below and click SUBMIT.</h2>
   <h4>Choose a pushup variation:</h4>
+  <form>
   <select id="pu">
-    <option value="1">1 Incline Wall Pushup</option>
-    <option value="2">2 Knee Pushup</option>
-    <option value="3">3 Full Pushup</option>
-    <option value="4">4 Inverse Pushup</option>
-    <option value="5">5 Plyometric Pushup</option>
+    <option value="N/A">--Select a pushup variation---</option>
+    <option value="Incline Wall Pushup">1 Incline Wall Pushup</option>
+    <option value="Knee Pushup">2 Knee Pushup</option>
+    <option value="Full Pushup">3 Full Pushup</option>
+    <option value="Inverse Pushup">4 Inverse Pushup</option>
+    <option value="Plyometric Pushup">5 Plyometric Pushup</option>
   </select>
   <h4>How many of these pushups can you do with <em>perfect form?</em></h4>
   <select id="puez">
-    <option value="easy">More than 20</option>
-    <option value="medium">Around 10</option>
-    <option value="hard">Less than 5</option>
+    <option value="N/A">--Select an approximation---</option>
+    <option value="20 Reps">More than 15</option>
+    <option value="10 Reps">Around 10</option>
+    <option value="3 Reps">Less than 5</option>
   </select>
   <h4>Choose a plank variation:</h4>
   <select id="p">
-    <option value="1">1 Knee Plank</option>
-    <option value="2">2 Elbow Plank</option>
-    <option value="3">3 Marching Plank</option>
-    <option value="4">4 Tuck Plank</option>
-    <option value="5">5 LLPT Plank</option>
+    <option value="N/A">--Select a plank variation---</option>
+    <option value="Knee Plank">1 Knee Plank</option>
+    <option value="Elbow Plank">2 Elbow Plank</option>
+    <option value="Marching Plank">3 Marching Plank</option>
+    <option value="Tuck Plank">4 Tuck Plank</option>
+    <option value="LLPT Plank">5 LLPT Plank</option>
   </select>
-  <h4>How many of these planks can you do with <em>perfect form?</em>(Marching and Tuck)/ How long can you hold this plank with <em>perfect form?</em> (Knee, Elbow and LLPT)</em></h4>
+  <h4>How many of these planks can you do with <em>perfect form?</em>(Marching,Tuck)/ How long can you hold this plank with <em>perfect form?</em> (Knee, Elbow, LLPT)</h4>
   <select id="pez">
-    <option value="easy">More than 20 reps / Longer than 1 minute</option>
-    <option value="medium">Around 10 reps / Between 30-60 seconds</option>
-    <option value="hard">Less than 5 reps / Less than 30 seconds</option>
+    <option value="N/A">--Select an approximation---</option>
+    <option value="20 Reps (Marching,Tuck) / 90 second hold (Knee,Elbow,LLPT)">More than 20 reps / Longer than 1 minute</option>
+    <option value="10 Reps (Marching,Tuck) / 45 second hold (Knee,Elbow,LLPT)">Around 10 reps / Between 30-60 seconds</option>
+    <option value="6 Reps (Marching,Tuck) / 20 second hold (Knee,Elbow,LLPT)">Less than 10 reps / Less than 30 seconds</option>
   </select>
   <h4>Choose a squat variation:</h4>
   <select id="s">
-    <option value="1">1 Chair Squat</option>
-    <option value="2">2 Squat to Calf Raise</option>
-    <option value="3">3 Split Squat</option>
-    <option value="4">4 Cossack Squat</option>
-    <option value="5">5 Plyometric Tuck Squat</option>
+    <option value="N/A">--Select a squat variation---</option>
+    <option value="Chair Squat">1 Chair Squat</option>
+    <option value="Squat to Calf Raise">2 Squat to Calf Raise</option>
+    <option value="Split Squat">3 Split Squat</option>
+    <option value="Cossack Squat">4 Cossack Squat</option>
+    <option value="Plyometric Tuck Squat">5 Plyometric Tuck Squat</option>
   </select>
   <h4>How many of these squats can you do with <em>perfect form?</em></h4>
   <select id="sez">
-    <option value="easy">More than 30</option>
-    <option value="medium">Around 20</option>
-    <option value="hard">Less than 10</option>
-  </select>
-  <h4>Finally, how much energy are you willing to expend in this workout?</h4>
-  <select id="circuit">
-    <option value="2">Not that much...</option>
-    <option value="3">A normal amount.</option>
-    <option value="5">A lot!</option>
+    <option value="N/A">--Select an approximation---</option>
+    <option value="20 Reps">More than 20</option>
+    <option value="15 Reps">Between 10-20</option>
+    <option value="8 Reps">Less than 10</option>
   </select>
   <br>
   <br>
-  <button type="button" class="button">SUBMIT</button>
+  <button type="button" class="button" onclick="printWorkout() ;">SUBMIT</button>
+</form>
 </body>
 </html>
