@@ -1,5 +1,6 @@
 function printWorkout()
 {
+  document.getElementById("customWorkout").style.display = 'table'
   var pu = document.getElementById("pu").value;
   var pureps = document.getElementById("pureps").value;
   var p = document.getElementById("p").value;
@@ -26,12 +27,12 @@ function printWorkout()
   else if (preps == "20 (Marching,Tuck) / 90s Hold (Knee,Elbow,LLPT)") {
     var psets = "3"
     var prest = "30 Seconds" }
-  else if (pureps == "10") {
-    var pusets = "10 (Marching,Tuck) / 45s Hold (Knee,Elbow,LLPT)"
-    var purest = "45 Seconds" }
-  else if (pureps == "6 (Marching,Tuck) / 20s Hold (Knee,Elbow,LLPT)") {
-    var pusets = "5"
-    var purest = "60 Seconds" }
+  else if (preps == "10 (Marching,Tuck) / 45s Hold (Knee,Elbow,LLPT)") {
+    var psets = "4"
+    var prest = "45 Seconds" }
+  else if (preps == "6 (Marching,Tuck) / 20s Hold (Knee,Elbow,LLPT)") {
+    var psets = "5"
+    var prest = "60 Seconds" }
 
   if (sreps == "NOT SELECTED") {
     var ssets = "NOT SELECTED"

@@ -34,15 +34,6 @@
   color: #14213D;
   font-weight: bolder;
 }
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-th, td {
-  border: 1px solid black;
-  text-align: left;
-  padding: 4px;
-}
 .button {
   background-color: pink;
   border: 1px solid black;
@@ -66,4 +57,16 @@ th, td {
 }
 .lowerborder {
   border: 5px solid #191DA3;
+}
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+  border: 1px solid black;
+}
+.workoutTable {
+  display: none
 }
