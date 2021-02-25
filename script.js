@@ -8,7 +8,8 @@ function printWorkout()
   var s = document.getElementById("s").value;
   var sreps = document.getElementById("sreps").value;
 
-  if (pureps == "NOT SELECTED") {
+  if (pu == "NOT SELECTED" || pureps == "NOT SELECTED") {
+    var pureps = "NOT SELECTED"
     var pusets = "NOT SELECTED"
     var purest = "NOT SELECTED" }
   else if (pureps == "20") {
@@ -21,18 +22,34 @@ function printWorkout()
     var pusets = "5"
     var purest = "60 Seconds" }
 
-  if (preps == "NOT SELECTED") {
+  if (p == "NOT SELECTED" || preps == "NOT SELECTED") {
+    var prepsadj = "NOT SELECTED"
     var psets = "NOT SELECTED"
     var prest = "NOT SELECTED" }
-  else if (preps == "20 (Marching,Tuck) / 90s Hold (Knee,Elbow,LLPT)") {
+  else if ((p == "Knee Plank" || p == "Elbow Plank" || p == "LLPT Plank") && (preps == "20 (Marching,Tuck) / 90s Hold (Knee,Elbow,LLPT)")) {
+    var prepsadj = "90s Hold"
     var psets = "3"
     var prest = "30 Seconds" }
-  else if (preps == "10 (Marching,Tuck) / 45s Hold (Knee,Elbow,LLPT)") {
+  else if ((p == "Knee Plank" || p == "Elbow Plank" || p == "LLPT Plank") && (preps == "10 (Marching,Tuck) / 45s Hold (Knee,Elbow,LLPT)")) {
+    var prepsadj = "45s Hold"
     var psets = "4"
     var prest = "45 Seconds" }
-  else if (preps == "6 (Marching,Tuck) / 20s Hold (Knee,Elbow,LLPT)") {
+  else if ((p == "Knee Plank" || p == "Elbow Plank" || p == "LLPT Plank") && (preps == "6 (Marching,Tuck) / 20s Hold (Knee,Elbow,LLPT)")) {
+    var prepsadj = "20s Hold"
     var psets = "5"
     var prest = "60 Seconds" }
+  else if ((p == "Tuck Plank" || p == "Marching Plank") && (preps == "20 (Marching,Tuck) / 90s Hold (Knee,Elbow,LLPT)")) {
+    var prepsadj = "20"
+    var psets = "3"
+    var prest = "30 Seconds"}
+  else if ((p == "Tuck Plank" || p == "Marching Plank") && (preps == "10 (Marching,Tuck) / 45s Hold (Knee,Elbow,LLPT)")) {
+    var prepsadj = "10"
+    var psets = "4"
+    var prest = "45 Seconds" }
+  else if ((p == "Tuck Plank" || p == "Marching Plank") && (preps == "6 (Marching,Tuck) / 20s Hold (Knee,Elbow,LLPT)")) {
+    var prepsadj = "6"
+    var psets = "5"
+    var prest = "60 Seconds"}
 
   if (sreps == "NOT SELECTED") {
     var ssets = "NOT SELECTED"
@@ -54,7 +71,7 @@ function printWorkout()
   customWorkout.rows[1].cells[3].textContent = purest;
   customWorkout.rows[2].cells[0].textContent = p;
   customWorkout.rows[2].cells[1].textContent = psets;
-  customWorkout.rows[2].cells[2].textContent = preps;
+  customWorkout.rows[2].cells[2].textContent = prepsadj;
   customWorkout.rows[2].cells[3].textContent = prest;
   customWorkout.rows[3].cells[0].textContent = s;
   customWorkout.rows[3].cells[1].textContent = ssets;
