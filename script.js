@@ -1,6 +1,7 @@
 function printWorkout()
 {
   document.getElementById("customWorkout").style.display = 'table'
+  document.getElementById("bestresults").style.display = 'inline'
   var pu = document.getElementById("pu").value;
   var pureps = document.getElementById("pureps").value;
   var p = document.getElementById("p").value;
