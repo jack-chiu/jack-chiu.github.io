@@ -102,11 +102,11 @@ table {
 }
 td {
   border: 2px solid #6E7E85;
-  padding: 20px;
+  padding: 30px;
 }
 th {
   border: 2px solid #6E7E85;
-  padding: 20px;
+  padding: 30px;
   background-color: #202020;
 }
 .workoutTable {
