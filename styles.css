@@ -109,6 +109,12 @@ th {
   padding: 30px;
   background-color: #202020;
 }
+select {
+  width: 100% ;
+  color: white;
+  font-size: 15px;
+  background-color: #202020;
+}
 .workoutTable {
   display: none
 }
