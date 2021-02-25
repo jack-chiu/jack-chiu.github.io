@@ -110,10 +110,7 @@ th {
   background-color: #202020;
 }
 select {
-  width: 100% ;
-  color: white;
-  font-size: 15px;
-  background-color: #202020;
+  width: 100%;
 }
 .workoutTable {
   display: none
